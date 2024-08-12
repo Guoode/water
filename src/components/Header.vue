@@ -34,7 +34,7 @@ header {
 }
 /*设定头像图片样式*/
 .avatar-info {
-  margin-top: 10px;
+  margin-top: px;
   margin-right: 40px;
   cursor: pointer;
 }
