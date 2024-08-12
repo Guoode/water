@@ -3,20 +3,23 @@
     <el-container>
       <el-header><Header /></el-header>
       <el-container>
-        <el-aside width="200px">Aside</el-aside>
-        <el-main>Main</el-main>
+        <el-aside width="200px"><Aside /></el-aside>
+        <el-main><Main /></el-main>
       </el-container>
-      <el-footer>Footer</el-footer>
+      <el-footer><Footer /></el-footer>
     </el-container>
   </div>
 </template>
 
 <script>
 import Header from "./Header";
+import Aside from "./Aside";
+import Main from "./Main";
+import Footer from "./Footer";
 
 export default {
   name: "Index",
-  components: { Header },
+  components: { Header, Main, Footer, Aside },
   props: {
     msg: String,
   },

@@ -17,10 +17,10 @@
       <template #dropdown>
         <el-dropdown-menu>
           <el-dropdown-item
-            ><i class="el-icon-info"></i>个人中心</el-dropdown-item
+            ><el-icon><User /></el-icon>个人中心</el-dropdown-item
           >
           <el-dropdown-item
-            ><i class="el-icon-switch-button"></i>退出登录</el-dropdown-item
+            ><el-icon><SwitchButton /></el-icon>退出登录</el-dropdown-item
           >
         </el-dropdown-menu>
       </template>
