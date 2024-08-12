@@ -1,9 +1,7 @@
 <template>
   <header>
-    <div>
-      <h1 style="margin-top: 1px; color: #425049; font-size: 30px">
-        欢迎来到水界守护者
-      </h1>
+    <div style="flex: 1; text-align: center; font-size: 34px; color: #425049">
+      <span>欢迎来到水界守护者</span>
     </div>
     <el-dropdown>
       <span class="el-dropdown-link">
