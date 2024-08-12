@@ -2,10 +2,6 @@
   <div>Main</div>
 </template>
 
-<script>
-export default {
-  name: "Main",
-};
-</script>
+<script></script>
 
 <style scoped></style>
