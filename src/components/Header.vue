@@ -1,16 +1,30 @@
 <template>
   <header>
     <div>
-      <h1 style="margin-top: -10px; color: #425049; font-size: 30px">
+      <h1 style="margin-top: 1px; color: #425049; font-size: 30px">
         欢迎来到水界守护者
       </h1>
     </div>
-    <div class="demo-basic--circle">
-      <div class="block">
-        <el-avatar :size="40" :src="avatar" :class="['avatar-info']">
-        </el-avatar>
-      </div>
-    </div>
+    <el-dropdown>
+      <span class="el-dropdown-link">
+        <div class="demo-basic--circle">
+          <div class="block">
+            <el-avatar :size="40" :src="avatar" :class="['avatar-info']">
+            </el-avatar>
+          </div>
+        </div>
+      </span>
+      <template #dropdown>
+        <el-dropdown-menu>
+          <el-dropdown-item
+            ><i class="el-icon-info"></i>个人中心</el-dropdown-item
+          >
+          <el-dropdown-item
+            ><i class="el-icon-switch-button"></i>退出登录</el-dropdown-item
+          >
+        </el-dropdown-menu>
+      </template>
+    </el-dropdown>
   </header>
 </template>
 
@@ -34,8 +48,10 @@ header {
 }
 /*设定头像图片样式*/
 .avatar-info {
-  margin-top: px;
+  margin-top: 10px;
   margin-right: 40px;
+  margin-left: 20px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 </style>
