@@ -15,10 +15,14 @@
       <template #dropdown>
         <el-dropdown-menu>
           <el-dropdown-item
-            ><el-icon><User /></el-icon>个人中心</el-dropdown-item
-          >
+            ><el-icon><User /></el-icon>
+            个人中心
+          </el-dropdown-item>
           <el-dropdown-item
-            ><el-icon><SwitchButton /></el-icon>退出登录</el-dropdown-item
+            ><el-icon><SwitchButton /></el-icon
+            ><router-link to="login" class="custom-link"
+              >退出登录</router-link
+            ></el-dropdown-item
           >
         </el-dropdown-menu>
       </template>
@@ -51,5 +55,9 @@ header {
   margin-left: 20px;
   margin-bottom: 20px;
   cursor: pointer;
+}
+.custom-link {
+  text-decoration: none;
+  color: black;
 }
 </style>
