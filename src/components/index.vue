@@ -35,7 +35,7 @@ export default {
   background-color: #d3dce6;
   color: #333;
   text-align: center;
-  line-height: 200px;
+  line-height: 700px;
 }
 
 .el-main {
