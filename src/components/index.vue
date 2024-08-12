@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-container>
-      <el-header>Header</el-header>
+      <el-header><Header /></el-header>
       <el-container>
         <el-aside width="200px">Aside</el-aside>
         <el-main>Main</el-main>
@@ -12,8 +12,11 @@
 </template>
 
 <script>
+import Header from "./Header";
+
 export default {
-  name: "index",
+  name: "Index",
+  components: { Header },
   props: {
     msg: String,
   },
