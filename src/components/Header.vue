@@ -2,8 +2,14 @@
   <header>
     <div>
       <h1 style="margin-top: -10px; color: #425049; font-size: 30px">
-        欢迎来到编程界明世隐的Vue项目
+        欢迎来到水界守护者
       </h1>
+    </div>
+    <div class="demo-basic--circle">
+      <div class="block">
+        <el-avatar :size="40" :src="avatar" :class="['avatar-info']">
+        </el-avatar>
+      </div>
     </div>
   </header>
 </template>
@@ -12,9 +18,24 @@
 export default {
   name: "Header",
   data() {
-    return {};
+    return {
+      avatar: require("@/assets/images/001.jpg"),
+    };
   },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+/*设定头像图片样式*/
+.avatar-info {
+  margin-top: 10px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+</style>
