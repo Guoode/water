@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <el-container>
+  <div class="container">
+    <el-container style="height: 100%">
       <el-header><Header /></el-header>
       <el-container>
         <el-aside width="200px"><Aside /></el-aside>
@@ -19,7 +19,7 @@ import Footer from "./Footer";
 
 export default {
   name: "Index",
-  components: { Header, Main, Footer, Aside },
+  components: { Header, Aside, Main, Footer },
   props: {
     msg: String,
   },
@@ -38,7 +38,7 @@ export default {
   background-color: #d3dce6;
   color: #333;
   text-align: center;
-  line-height: 700px;
+  line-height: 200px;
 }
 
 .el-main {
@@ -49,5 +49,13 @@ export default {
 
 body > .el-container {
   margin-bottom: 40px;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>
