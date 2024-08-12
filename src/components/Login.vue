@@ -9,7 +9,7 @@
           :rules="rules"
           ref="loginForm"
         >
-          <el-form-item label="名字" prop="name">
+          <el-form-item label="账号" prop="name">
             <el-input
               style="width: 200px"
               type="text"
@@ -46,7 +46,26 @@ export default {
         name: "",
         password: "",
       },
-      rules: {},
+      rules: {
+        name: [
+          { required: true, message: "请输入用户名", trigger: "blur" },
+          {
+            min: 3,
+            max: 6,
+            message: "用户名长度在 3 到 6 个字符",
+            trigger: "blur",
+          },
+        ],
+        password: [
+          { required: true, message: "请输密码", trigger: "blur" },
+          {
+            min: 3,
+            max: 6,
+            message: "密码长度在 3 到 6 个字符",
+            trigger: "blur",
+          },
+        ],
+      },
     };
   },
   methods: {
