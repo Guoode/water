@@ -13,11 +13,6 @@ const routes = [
     path: "/index",
     component:()=>import('../components/index.vue'),
   },
-  {
-    //实现路由重定向，当进入网页时，路由自动跳转到/student路由
-    redirect:'/login',
-    path:'/'
-}
 
 ];
 
