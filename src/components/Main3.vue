@@ -1,5 +1,5 @@
 <template>
-  <div>这是Main3</div>
+  <div>设置页面</div>
 </template>
 
 <script>

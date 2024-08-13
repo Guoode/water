@@ -12,6 +12,24 @@ const routes = [
   {
     path: "/index",
     component:()=>import('../components/index.vue'),
+    children:[
+      {
+          path:'/index/Main1',
+          component:()=>import('../components/Main1.vue')
+      },
+      {
+          path:'/index/Main2',
+          component:()=>import('../components/Main2.vue')
+      },
+      {
+          path:'/index/Main3',
+          component:()=>import('../components/Main3.vue')
+      }, 
+    ]
+  },
+  {
+    redirect:'/login',
+    path:'/login'
   },
 
 ];

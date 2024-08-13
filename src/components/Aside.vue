@@ -12,18 +12,36 @@
             ><el-icon><House /></el-icon>Home</span
           >
         </template>
-        <el-menu-item index="1-1">设备1</el-menu-item>
-        <el-menu-item index="1-2">设备2</el-menu-item>
+        <el-menu-item index="1-1"
+          ><router-link to="/index/Main1" class="custom-link"
+            >设备1</router-link
+          ></el-menu-item
+        >
+        <el-menu-item index="1-2"
+          ><router-link to="/index/Main1" class="custom-link"
+            >设备2</router-link
+          ></el-menu-item
+        >
         <el-sub-menu index="1-3">
-          <template #title>设备3</template>
+          <template #title
+            ><router-link to="/index/Main1" class="custom-link"
+              >设备3</router-link
+            ></template
+          >
           <el-menu-item index="1-3-1">运行情况</el-menu-item>
         </el-sub-menu>
       </el-sub-menu>
       <el-menu-item index="2"
-        ><el-icon><document /></el-icon>地图</el-menu-item
+        ><el-icon><document /></el-icon
+        ><router-link to="/index/Main2" class="custom-link"
+          >地图</router-link
+        ></el-menu-item
       >
       <el-menu-item index="3"
-        ><el-icon><setting /></el-icon>设置</el-menu-item
+        ><el-icon><setting /></el-icon
+        ><router-link to="/index/Main3" class="custom-link"
+          >设置</router-link
+        ></el-menu-item
       >
     </el-menu>
   </div>
@@ -35,4 +53,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.custom-link {
+  text-decoration: none;
+  color: #fff;
+}
+</style>

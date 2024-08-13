@@ -1,5 +1,5 @@
 <template>
-  <div>这是Main2</div>
+  <div>地图页面</div>
 </template>
 
 <script>

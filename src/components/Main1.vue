@@ -1,5 +1,5 @@
 <template>
-  <div>这是Main1</div>
+  <div>设备1页面</div>
 </template>
 
 <script>
